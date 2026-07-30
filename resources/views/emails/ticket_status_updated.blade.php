@@ -195,7 +195,7 @@
                             style="background-color:#f4f4f4; padding:12px 16px; border-top:1px solid #e5e7eb;">
                             <div style="font-size:14px; font-weight:600; color:#111827;">
                                 &copy; {{ date('Y') }} Copyright -
-                                {{ $setting?->name ?? config('app.name', 'Fablead Developers Technolab') }}
+                                {{ $setting?->name ?? config('app.name', 'ERP Inventory System') }}
                             </div>
                         </td>
                     </tr>

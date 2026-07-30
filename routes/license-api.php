@@ -10,9 +10,7 @@ use App\Http\Controllers\LicenseServer\LicenseApiController;
 use App\Http\Middleware\LicenseServerApiKey;
 use Illuminate\Support\Facades\Route;
 
-/*
-| Author license server API — https://fabproducts.fableadtech.com/license-erp/api/v1/license/*
-*/
+
 Route::prefix('api/v1/license')
     ->middleware([LicenseServerApiKey::class])
     ->group(function () {

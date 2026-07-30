@@ -31,7 +31,7 @@ class SalesController extends Controller
         return Setting::where('branch_id', $branchId)->first()
             ?? Setting::first()
             ?? new Setting([
-                'name' => 'Fablead Developer & Technolab',
+                'name' => 'ERP Inventory System',
                 'email' => 'info@gmail.com',
                 'phone' => 1234567890,
                 'address' => 'Adajan Surat',

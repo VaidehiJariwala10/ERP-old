@@ -72,7 +72,7 @@
 <body>
 
     <div style="width: 100%;">
-        <div style="float: left; font-size: 14px;" class="bold">{{ strtoupper($data['settings']->name ?? 'Fablead') }}</div>
+        <div style="float: left; font-size: 14px;" class="bold">{{ strtoupper($data['settings']->name ?? 'ERP') }}</div>
         <div style="float: right;" class="bold">PAGE NO. 1</div>
         <div style="clear: both;"></div>
     </div>

@@ -149,7 +149,7 @@
 <body>
     @php
         $setting = $setting ?? new \App\Models\Setting([
-            'name' => 'Fablead Developer & Technolab',
+            'name' => 'ERP Inventory System',
             'email' => 'info@gmail.com',
             'phone' => '1234567890',
             'address' => 'Adajan Surat',

@@ -132,7 +132,7 @@ class InstallerService
         $licenseServer = rtrim($data['license_server_url'] ?? '', '/');
 
         $this->env->write([
-            'APP_NAME' => $data['app_name'] ?? 'Fablead ERP',
+            'APP_NAME' => $data['app_name'] ?? 'ERP System',
             'APP_ENV' => $data['app_env'] ?? 'production',
             'APP_DEBUG' => ($data['app_debug'] ?? 'false') === 'true' ? 'true' : 'false',
             'APP_URL' => $data['app_url'],
@@ -144,7 +144,7 @@ class InstallerService
             'DB_PASSWORD' => $data['db_password'] ?? '',
             'LICENSE_MODE' => $data['license_mode'] ?? 'remote',
             'LICENSE_SERVER_URL' => $licenseServer,
-            'LICENSE_PRODUCT_CODE' => $data['license_product_code'] ?? 'FABLEAD_ERP',
+            'LICENSE_PRODUCT_CODE' => $data['license_product_code'] ?? 'ERP_System',
             'INSTALLED' => 'true',
         ]);
 

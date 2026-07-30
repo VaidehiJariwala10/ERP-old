@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-    <meta name="description" content="Fablead Inventory-Billing Software">
+    <meta name="description" content="Inventory-Billing Software">
     <meta name="keywords"
         content="inventory management, billing system, invoice generator, purchase orders, inventory control, POS system, admin dashboard">
-    <meta name="author" content="Fablead Developers Technolab">
+    <meta name="author" content="ERP Inventory System">
     <meta name="robots" content="noindex, nofollow">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Login</title>
@@ -625,8 +625,8 @@
         </div>
     </div>
     <footer class="login-footer">
-        <h1 class="login-footer-title">&copy; <?= date('Y') ?> <a href="https://fableadtechnolabs.com" target="_blank">Copyright - Fablead Developers Technolab</a></h1>
-        <h1 style="font-size: 14px; font-weight: 600; margin: 0;">© <?= date('Y') ?> <a href="https://fableadtechnolabs.com" target="_blank" style="color: inherit; text-decoration: none;">Copyright - Fablead Developers Technolab</a></h1>
+        <h1 class="login-footer-title">&copy; <?= date('Y') ?> <a href="#" target="_blank">Copyright</a></h1>
+        <h1 style="font-size: 14px; font-weight: 600; margin: 0;">© <?= date('Y') ?> <a href="#" target="_blank" style="color: inherit; text-decoration: none;">Copyright</a></h1>
     </footer>
 
     <!-- face-api.js from CDN -->

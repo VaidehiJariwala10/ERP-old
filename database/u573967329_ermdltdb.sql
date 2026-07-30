@@ -649,7 +649,7 @@ CREATE TABLE `leads` (
 --
 
 INSERT INTO `leads` (`id`, `branch_id`, `assigned_to`, `created_by`, `updated_by`, `name`, `email`, `phone`, `whatsapp`, `address`, `image`, `company_name`, `sic_code`, `lead_source`, `lead_status`, `comment`, `converted_customer_id`, `isDeleted`, `created_at`, `updated_at`) VALUES
-(3, 1, 19, 1, 1, 'Garrett Schwartz', 'tejasfablead12@gmail.com', '7896452321', NULL, 'Ea rerum dolor eaque', NULL, 'ADITYA INFOTECH', NULL, 'Ut in doloremque hic', 'Working', 'Quam culpa quis fug', NULL, 0, '2026-05-26 18:53:42', '2026-05-26 18:54:03'),
+(3, 1, 19, 1, 1, 'Garrett Schwartz', 'tejas12@gmail.com', '7896452321', NULL, 'Ea rerum dolor eaque', NULL, 'ADITYA INFOTECH', NULL, 'Ut in doloremque hic', 'Working', 'Quam culpa quis fug', NULL, 0, '2026-05-26 18:53:42', '2026-05-26 18:54:03'),
 (4, 1, 19, 1, 1, 'testtt', 'tejasfaeeblead@gmail.com', '9875641200', NULL, 'surat', NULL, 'ADITYA INFOTECH', NULL, 'Lead Source', 'Closed Won', NULL, 21, 1, '2026-05-26 18:55:00', '2026-05-26 18:55:29');
 
 -- --------------------------------------------------------
@@ -4083,9 +4083,9 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`id`, `branch_id`, `name`, `email`, `phone`, `gst_num`, `low_stock`, `address`, `state_code`, `currency_symbol`, `currency_position`, `logo`, `favicon`, `alt_phone`, `bank_name`, `branch`, `ac_no`, `ifsc_code`, `qr_code`, `working_hours`, `sunday_off`, `grace_period`, `lunch_break`, `open_time`, `close_time`, `yearly_holidays`, `invoice_size`, `send_mail`, `customer_whatsapp_message`, `admin_whatsapp_message`, `appointment_reminder_hours_before`, `admin_whatsapp_number`, `financial_year`, `tds_apply`, `cin_no`, `created_at`, `updated_at`) VALUES
-(1, 1, 'Fablead Developer & Technolab', 'fabinfo@gmail.com', '132123121', 'GST1234', 11, '5001, Adajan Gam', '24', '₹', 'left', 'logos/C8sWoajLCBkWZlOJhmSLDke4y0t5aCOSq6D6hJ7t.webp', 'favicons/5YjVF6A7si8v9WjoA93b412GOxToHJK0Enr79dZZ.webp', NULL, 'YES BANK', 'Adajan', '354235344', 'YES123452101', 'qr_codes/6XhLAOR2wzgKdE2x8KbkDQYQ6dJS2P5RmXSGp0cf.webp', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'big', 0, 0, 0, 3, NULL, 0, 0, NULL, '2025-04-04 06:04:17', '2026-05-20 10:12:40'),
+(1, 1, ' ERP Inventory System', 'info@gmail.com', '132123121', 'GST1234', 11, '5001, Adajan Gam', '24', '₹', 'left', 'logos/C8sWoajLCBkWZlOJhmSLDke4y0t5aCOSq6D6hJ7t.webp', 'favicons/5YjVF6A7si8v9WjoA93b412GOxToHJK0Enr79dZZ.webp', NULL, 'YES BANK', 'Adajan', '354235344', 'YES123452101', 'qr_codes/6XhLAOR2wzgKdE2x8KbkDQYQ6dJS2P5RmXSGp0cf.webp', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'big', 0, 0, 0, 3, NULL, 0, 0, NULL, '2025-04-04 06:04:17', '2026-05-20 10:12:40'),
 (2, 28, 'Surat Shop', 'shop@gmail.com', '1321321321', '1321321', 10, '5001 Ascon Plaza Near, Adajan Gam', NULL, '₹', 'left', 'logos/1Ya4X9auwY3ovTDrWPmeXv2W7h8NqvUhQF72xLD0.png', 'favicons/mwrIZ9oJ8RicO8aaKooXBKXvjvC0agKKASRk1JVM.png', NULL, 'Bank Of Baroda', 'Adajan', '3215215512', 'IFSCS655656', 'qr_codes/JBMuHpDY9xVR6TxHzQuXESAReha3bQfNt5O7ZQKs.jpg', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'big', 0, 0, 0, 3, NULL, 1, 1, NULL, '2025-09-02 12:15:03', '2026-04-03 11:45:43'),
-(4, 2, 'Fablead Developer & Technolab', 'fabinfo@gmail.com', '9368745859', 'GST1234', 10, 'adajan', '24', '₹', 'left', 'logos/0UhWw3EGcj2VobPe6LXqCLe6ItV1aBi5QPgHYDjm.webp', 'favicons/dXs8OMi0f1ARmMd2g6c9lYlqqTaXd94T8MXMUUHS.webp', NULL, 'YES BANK', 'Adajan', '167312232334', 'YES123452101', 'qr_codes/ZA3bGrhpbW0SDq0JtERw74ujgiNfeo6FEc3HG2sC.webp', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'big', 1, 0, 0, 3, NULL, 1, 1, NULL, '2026-04-27 17:28:13', '2026-04-27 17:28:13');
+(4, 2, 'ERP Inventory System', 'info@gmail.com', '9368745859', 'GST1234', 10, 'adajan', '24', '₹', 'left', 'logos/0UhWw3EGcj2VobPe6LXqCLe6ItV1aBi5QPgHYDjm.webp', 'favicons/dXs8OMi0f1ARmMd2g6c9lYlqqTaXd94T8MXMUUHS.webp', NULL, 'YES BANK', 'Adajan', '167312232334', 'YES123452101', 'qr_codes/ZA3bGrhpbW0SDq0JtERw74ujgiNfeo6FEc3HG2sC.webp', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 'big', 1, 0, 0, 3, NULL, 1, 1, NULL, '2026-04-27 17:28:13', '2026-04-27 17:28:13');
 
 -- --------------------------------------------------------
 
@@ -4114,7 +4114,7 @@ CREATE TABLE `smtp_settings` (
 --
 
 INSERT INTO `smtp_settings` (`id`, `mailer`, `host`, `port`, `username`, `password`, `encryption`, `from_address`, `from_name`, `status`, `branch_id`, `created_at`, `updated_at`) VALUES
-(1, 'smtp', 'smtp.gmail.com', 587, 'pnaitik.fablead@gmail.com', 'eyJpdiI6ImhuMVFKODZzVC94ODFEWm1uNmMyV1E9PSIsInZhbHVlIjoidGFVWTFsTU9JSENPSnNtRk44Vkl3Zz09IiwibWFjIjoiNDU2ZGIyN2U4NmQzZWRkMGIxY2M5ZDVjZDZlMDgwM2NhOWJlY2RjZTM4Y2Q5ODZkMGUxYjE4Mjk2YjE1YjUyNiIsInRhZyI6IiJ9', 'tls', 'pnaitik.fablead@gmail.com', '', 1, 1, '2026-03-30 06:29:36', '2026-04-01 12:35:46');
+(1, 'smtp', 'smtp.gmail.com', 587, 'pnaitik.erp@gmail.com', 'eyJpdiI6ImhuMVFKODZzVC94ODFEWm1uNmMyV1E9PSIsInZhbHVlIjoidGFVWTFsTU9JSENPSnNtRk44Vkl3Zz09IiwibWFjIjoiNDU2ZGIyN2U4NmQzZWRkMGIxY2M5ZDVjZDZlMDgwM2NhOWJlY2RjZTM4Y2Q5ODZkMGUxYjE4Mjk2YjE1YjUyNiIsInRhZyI6IiJ9', 'tls', 'pnaitik.erp@gmail.com', '', 1, 1, '2026-03-30 06:29:36', '2026-04-01 12:35:46');
 
 -- --------------------------------------------------------
 
@@ -4234,8 +4234,8 @@ INSERT INTO `users` (`id`, `branch_id`, `name`, `company_name`, `email`, `gst_nu
 (16, 1, 'test', NULL, NULL, NULL, NULL, '1234560000', '', NULL, NULL, NULL, 'vendor', 1, NULL, NULL, 1, 0, '2026-05-01 12:06:33', '2026-05-01 12:06:33'),
 (17, 2, 'vijay', NULL, 'vijay@gmail.com', NULL, NULL, '9784653120', '', NULL, NULL, NULL, 'vendor', 1, NULL, NULL, 1, 0, '2026-05-04 17:26:24', '2026-05-04 17:26:24'),
 (18, 1, 'RAMKISHORE GANPATRAM BISHNOI', 'ADITYA INFOTECH', NULL, '24AJPPB5119B1ZQ', 'AJPPB5119B', '7874531050', '24', NULL, NULL, NULL, 'customer', 1, NULL, NULL, 1, 0, '2026-05-06 18:09:53', '2026-05-06 18:09:53'),
-(19, 1, 'Tejas Patel', NULL, 'tejasfablead@gmail.com', NULL, NULL, '7874531055', NULL, NULL, '$2y$12$wl2ByNLDf5FFXFk3W89ydeyRny3gfx60jZkmEfBKOBV3Nh3OeJwza', NULL, 'staff', 1, NULL, '1', NULL, 0, '2026-05-26 09:49:10', '2026-05-26 09:49:10'),
-(20, 1, 'Sneh Chaudhary', NULL, 'fablead.sneh@gmail.com', NULL, NULL, '8460335764', '05', NULL, NULL, NULL, 'vendor', 1, NULL, NULL, 1, 0, '2026-05-26 18:08:20', '2026-05-26 18:08:20'),
+(19, 1, 'Tejas Patel', NULL, 'abcd@gmail.com', NULL, NULL, '7874531055', NULL, NULL, '$2y$12$wl2ByNLDf5FFXFk3W89ydeyRny3gfx60jZkmEfBKOBV3Nh3OeJwza', NULL, 'staff', 1, NULL, '1', NULL, 0, '2026-05-26 09:49:10', '2026-05-26 09:49:10'),
+(20, 1, 'Sneh Chaudhary', NULL, 'erp.sneh@gmail.com', NULL, NULL, '8460335764', '05', NULL, NULL, NULL, 'vendor', 1, NULL, NULL, 1, 0, '2026-05-26 18:08:20', '2026-05-26 18:08:20'),
 (21, 1, 'testtt', 'ADITYA INFOTECH', 'tejasfaeeblead@gmail.com', NULL, NULL, '9875641200', NULL, NULL, '$2y$12$Vv5RDLl0f9wHjsqFodFbt.Qnuyun10GTXKHuAC.yA4JQ5O0jTLfUK', NULL, 'customer', 1, NULL, NULL, 1, 1, '2026-05-26 18:55:10', '2026-05-26 18:55:21');
 
 -- --------------------------------------------------------
