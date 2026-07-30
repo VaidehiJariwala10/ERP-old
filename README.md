@@ -1,4 +1,4 @@
-# Fablead ERP System
+# ERP System
 
 A Laravel-based inventory and billing system for managing sales, purchases, stock, customers, vendors, invoices, payments, and reports.
 
@@ -121,4 +121,4 @@ php artisan passport:install --force
 
 ## License
 
-This project is proprietary software developed by **Fablead Developers Technolab**. All rights reserved.
+

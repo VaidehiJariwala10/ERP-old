@@ -1,33 +1,3 @@
-@php
-    $settings = App\Models\Setting::first();
-    $admin = App\Models\User::where('role', 'admin')->first();
-    $erpOptions = collect([
-        [
-            'name' => 'Select ERP',
-            'url' => 'https://erp-demo.fableadtech.com/',
-        ],
-        [
-            'name' => 'Garage ERP',
-            'url' => 'https://garage-erp.fableadtech.com/',
-        ],
-         [
-            'name' => 'Manufacturer ERP',
-            'url' => 'http://mfgdemo-erp.fableadtech.in/',
-        ],
-        [
-            'name' => 'Hotel ERP',
-            'url' => 'https://hotel-erp.fableadtech.com/',
-        ],
-        [
-            'name' => 'Store ERP',
-            'url' => 'https://store-erp.fableadtech.com/',
-        ],
-
-    ])
-        ->unique('url')
-        ->values();
-@endphp
-
 {{-- <style>
     .select2-container--default .select2-selection--single .select2-selection__clear {
         display: none;
@@ -1494,21 +1464,7 @@
     <ul class="nav user-menu">
         <div class="d-flex align-items-center header-search-container tab-view">
             @if (in_array($user->role, ['admin']))
-                <div class="me-1" id="erpContainer" style="width:115px;">
-                    <div class="d-flex align-items-center">
-                        <select id="erpSelect" class="form-select form-select-sm" data-current-erp="Select ERP" style="width: 300px;">
-                            <option value="">Select ERP</option>
-                            @foreach ($erpOptions as $erpOption)
-                                @php
-                                    $isCurrentErp = ($erpOption['name'] === 'Select ERP');
-                                @endphp
-                                <option value="{{ $erpOption['url'] }}" {{ $isCurrentErp ? 'selected' : '' }}>
-                                    {{ $erpOption['name'] }}
-                                </option>
-                            @endforeach
-                        </select>
-                    </div>
-                </div>
+                
 
                 @if (canUseBranches())
                 <div class="me-1" id="subBranchContainer" style="display: none;">

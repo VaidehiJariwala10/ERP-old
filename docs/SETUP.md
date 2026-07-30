@@ -34,7 +34,7 @@ Before uploading to CodeCanyon, set these in **`.env.example`** (buyers inherit 
 ```env
 LICENSE_SECRET=same-64-char-secret-on-license-server-and-product
 LICENSE_SERVER_URL=https://license-erp.fableadtech.in
-LICENSE_PRODUCT_CODE=FABLEAD_ERP
+LICENSE_PRODUCT_CODE=SYSTEM_ERP
 LICENSE_MODE=remote
 # License enforcement is always on (not in .env)
 ```

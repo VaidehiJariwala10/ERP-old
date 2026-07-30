@@ -35,7 +35,7 @@ class ResetPassportClients extends Command
 
         Schema::enableForeignKeyConstraints();
 
-        $appName = config('app.name', 'Fablead ERP');
+        $appName = config('app.name', 'ERP Project');
 
         $personalClient = $clients->createPersonalAccessClient(
             null,

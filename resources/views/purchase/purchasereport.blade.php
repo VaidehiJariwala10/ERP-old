@@ -6,7 +6,7 @@
 @php
     $showPurchaseReportChart = \App\Services\StaffDepartmentScope::canShowReportChart(\App\Services\StaffDepartmentScope::REPORT_PURCHASE);
     $fallbackSetting = new \App\Models\Setting([
-    'name' => 'Fablead Developer & Technolab',
+    'name' => ' ERP Inventory System',
     'email' => 'info@gmail.com',
     'phone' => '1234567890',
     'address' => 'Adajan Surat',

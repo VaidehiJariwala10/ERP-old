@@ -4,7 +4,7 @@
  * License server admin panel — NOT loaded on buyer ERP installs.
  *
  * Not registered in the buyer ERP build (config license.admin_enabled is false).
- * Author admin lives on the fablead-license server deployment only.
+ * Author admin lives on the license server deployment only.
  */
 
 use App\Http\Controllers\LicenseServer\LicenseAdminAuthController;
@@ -13,7 +13,7 @@ use App\Http\Middleware\LicenseAdminAuthenticate;
 use Illuminate\Support\Facades\Route;
 
 /*
-| License server admin (fablead-license project only)
+| License server admin (license project only)
 */
 Route::prefix('license-admin')->name('license-admin.')->group(function () {
     // Route::get('login', [LicenseAdminAuthController::class, 'showLogin'])->name('login');

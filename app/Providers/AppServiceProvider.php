@@ -46,7 +46,7 @@ class AppServiceProvider extends ServiceProvider
         // Without this, `php artisan migrate` crashes before it can even create the table.
         try {
             $appSetting = Setting::first() ?? new Setting([
-                'name'              => 'Fablead Developer & Technolab',
+                'name'              => 'ERP Inventory System',
                 'email'             => 'info@gmail.com',
                 'phone'             => 1234567890,
                 'address'           => 'Adajan Surat',
@@ -56,7 +56,7 @@ class AppServiceProvider extends ServiceProvider
             ]);
         } catch (\Exception $e) {
             $appSetting = new Setting([
-                'name'              => 'Fablead Developer & Technolab',
+                'name'              => 'ERP Inventory System',
                 'email'             => 'info@gmail.com',
                 'phone'             => 1234567890,
                 'address'           => 'Adajan Surat',

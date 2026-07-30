@@ -1,4 +1,4 @@
-Fablead ERP — First-time installation
+ERP — First-time installation
 =====================================
 
 1. Upload all files to your server (document root = /public folder).

@@ -56,7 +56,7 @@ php artisan license:activate --key="PASTE_TOKEN_HERE"
 
 ```env
 LICENSE_SECRET=your-random-64-char-secret-here
-LICENSE_PRODUCT_CODE=FABLEAD_ERP
+LICENSE_PRODUCT_CODE=ERP_SYSTEM
 ```
 
 Use the **same** `LICENSE_SECRET` on your license server and in the product you ship.
@@ -65,7 +65,7 @@ Use the **same** `LICENSE_SECRET` on your license server and in the product you 
 
 Host this project (or only `routes/license-api.php` + related classes) at:
 
-**`https://license-erp.fableadtech.in`**
+<!-- **`https://license-erp.fableadtech.in`** -->
 
 Buyers set:
 

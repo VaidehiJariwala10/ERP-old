@@ -22,7 +22,7 @@
 <body class="account-page">
     <div class="setup-wrap">
         <div class="login-userheading text-center mb-4">
-            <h3>Fablead ERP — Installation Wizard</h3>
+            <h3>ERP Inventory System</h3>
             <p class="text-muted">One-time setup for live server or local install</p>
         </div>
 

@@ -1,7 +1,7 @@
 @php
-    $settings = App\Models\Setting::first();
-    $user = auth()->user();
-    $homeRoute = $user && $user->role === 'staff' ? 'auth.staff-dashboard' : 'auth.dashboard';
+$settings = App\Models\Setting::first();
+$user = auth()->user();
+$homeRoute = $user && $user->role === 'staff' ? 'auth.staff-dashboard' : 'auth.dashboard';
 @endphp
 <!DOCTYPE html>
 <html lang="en">
@@ -9,18 +9,20 @@
 <head>
     <meta charset="utf-8">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0"> -->
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Fablead Inventory-Billing Software">
+    <meta name="description" content="Inventory-Billing Software">
     <meta name="keywords" content="inventory management, billing system, invoice generator, purchase orders, inventory control, POS system, admin dashboard">
-    <meta name="author" content="Fablead Developers Technolab">
+    <meta name="author" content="Inventory Manage">
     <meta name="robots" content="noindex, nofollow">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    
+
     <title>@yield('title', 'Default Title')</title>
 
+    @if(optional($settings)->favicon)
     <link rel="shortcut icon" type="image/x-icon"
-        href="{{ optional($settings)->favicon ? image_path('storage/' . $settings->favicon) : 'https://fableadtechnolabs.com/favicon-192x192.webp' }}">
+        href="{{ image_path('storage/' . $settings->favicon) }}">
+    @endif
 
     <link rel="stylesheet" href="{{ image_path('admin/assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ image_path('admin/assets/plugins/owlcarousel/owl.carousel.min.css') }}">
@@ -34,10 +36,10 @@
     <link rel="stylesheet" href="{{ image_path('admin/assets/plugins/fontawesome/css/fontawesome.min.css') }}">
     <link rel="stylesheet" href="{{ image_path('admin/assets/plugins/fontawesome/css/all.min.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     @php
-        $styleCssPath = public_path('admin/assets/css/style.css');
-        $styleCssVersion = file_exists($styleCssPath) ? filemtime($styleCssPath) : time();
+    $styleCssPath = public_path('admin/assets/css/style.css');
+    $styleCssVersion = file_exists($styleCssPath) ? filemtime($styleCssPath) : time();
     @endphp
     <link rel="stylesheet" href="{{ image_path('admin/assets/css/style.css') }}?v={{ $styleCssVersion }}">
     @stack('css')
@@ -61,7 +63,7 @@
 
     <!-- Footer with copyright -->
     <footer style="text-align: center; padding: 10px 0; background-color: #f4f4f4; height: 50px;">
-        <h1 style="font-size: 14px; font-weight: 600;">© <?= date('Y') ?> Copyright - Fablead Developers Technolab</h1>
+        <h1 style="font-size: 14px; font-weight: 600;">© <?= date('Y') ?> Copyright</h1>
     </footer>
 
     @include('layout.footer')
@@ -87,7 +89,7 @@
             <span>Customer</span>
         </a>
     </div>
- 
+
     @stack('js')
 </body>
 

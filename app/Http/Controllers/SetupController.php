@@ -18,14 +18,14 @@ class SetupController extends Controller
             'requirements' => $requirements,
             'defaults' => [
                 'app_url' => rtrim(url('/'), '/'),
-                'app_name' => config('app.name', 'Fablead ERP'),
+                'app_name' => config('app.name', 'ERP Project'),
                 'db_host' => env('DB_HOST', '127.0.0.1'),
                 'db_port' => env('DB_PORT', '3306'),
                 'db_database' => env('DB_DATABASE', ''),
                 'db_username' => env('DB_USERNAME', 'root'),
                 'license_server_url' => env('LICENSE_SERVER_URL', ''),
                 'license_mode' => env('LICENSE_MODE', 'remote'),
-                'license_product_code' => env('LICENSE_PRODUCT_CODE', 'FABLEAD_ERP'),
+                'license_product_code' => env('LICENSE_PRODUCT_CODE', 'ERP_project'),
             ],
         ]);
     }
