@@ -1478,20 +1478,7 @@
             @endif
 
 
-            {{-- HR Dropdown --}}
-            @if (in_array(auth()->user()->role, ['admin', 'sub-admin', 'hr']))
-            <div class="dropdown me-2 d-flex align-items-center">
-                <button class="btn btn-sm dropdown-toggle text-white" style="background-color: #ff9f43; border-radius: 6px; height: 36px;" data-bs-toggle="dropdown">
-                    <i class="fa fa-id-badge"></i> HR<i class="fa fa-chevron-down ms-1"></i>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="{{ route('attendence.calendar') }}">Attendance</a></li>
-                    <li><a class="dropdown-item" href="{{ route('payroll.list') }}">Payroll</a></li>
-                    <li><a class="dropdown-item" href="{{ route('staff.list') }}">Staff</a></li>
-                    <li><a class="dropdown-item" href="{{ route('leave.request') }}">Leaves</a></li>
-                </ul>
-            </div>
-            @endif
+           
 
 
             <!-- Search Field Container -->
