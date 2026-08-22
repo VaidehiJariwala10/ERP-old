@@ -334,7 +334,7 @@ app('hasPermission')(38, 'view');
                 @endif
 
                 {{-- ====== CRM ====== --}}
-                @if ($showCrmSection)
+                <!-- @if ($showCrmSection)
                 <li class="submenu sidebar-category sidebar-category-crm">
                     <a href="javascript:void(0);">
                         <i class="fas fa-user-friends"></i>
@@ -417,7 +417,7 @@ app('hasPermission')(38, 'view');
                         @endif
                     </ul>
                 </li>
-                @endif
+                @endif -->
 
                 {{-- ====== ACCOUNTING ====== --}}
                 @if ($showAccountingSection)
@@ -648,13 +648,13 @@ app('hasPermission')(38, 'view');
                     @if (app('hasPermission')(14, 'view'))
                     <li><a href="{{ route('setting.generalsettings') }}">Shop Settings</a></li>
                     @endif
-                    @if (app('hasPermission')(14, 'view') && (!$settings || $settings->send_mail))
+                    <!-- @if (app('hasPermission')(14, 'view') && (!$settings || $settings->send_mail))
                     <li><a href="{{ route('setting.smtpsettings') }}">Smtp Settings</a></li>
-                    @endif
-                    @if (app('hasPermission')(14, 'view') && (!$settings || $settings->customer_whatsapp_message || $settings->admin_whatsapp_message))
+                    @endif -->
+                    <!-- @if (app('hasPermission')(14, 'view') && (!$settings || $settings->customer_whatsapp_message || $settings->admin_whatsapp_message))
                     <li><a href="{{ route('setting.facebookappconfiguration') }}">WhatsApp
                             Configuration</a></li>
-                    @endif
+                    @endif -->
                     @if (app('hasPermission')(15, 'view'))
                     <li><a href="{{ route('auth.taxrates') }}">Tax Rates</a></li>
                     @endif

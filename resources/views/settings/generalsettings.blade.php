@@ -302,12 +302,12 @@
                             🏪 Shop Settings
                         </button>
                     </li>
-                    <li class="nav-item" role="presentation">
+                    <!-- <li class="nav-item" role="presentation">
                         <button class="nav-link" id="rules-tab" data-bs-toggle="tab" data-bs-target="#company-rules"
                             type="button" role="tab" aria-controls="company-rules" aria-selected="false">
                             🏢 Company Rules
                         </button>
-                    </li>
+                    </li> -->
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="dashboard-tab" data-bs-toggle="tab" data-bs-target="#dashboard-settings"
                             type="button" role="tab" aria-controls="dashboard-settings" aria-selected="false">
@@ -752,7 +752,7 @@
                     <!-- ================= DASHBOARD SETTINGS TAB ================= -->
                     <div class="tab-pane fade" id="dashboard-settings" role="tabpanel" aria-labelledby="dashboard-tab">
                         <div class="row">
-                            <div class="col-lg-4 col-sm-6">
+                            <!-- <div class="col-lg-4 col-sm-6">
                                 <div class="form-group">
                                     <label>CRM Section On Dashboard</label>
                                     <select id="show_crm_dashboard" name="show_crm_dashboard" class="form-select">
@@ -761,8 +761,8 @@
                                     </select>
                                     <small class="text-muted">When disabled, the entire CRM section is hidden from the dashboard.</small>
                                 </div>
-                            </div>
-                            <div class="col-lg-4 col-sm-6">
+                            </div> -->
+                            <!-- <div class="col-lg-4 col-sm-6">
                                 <div class="form-group">
                                     <label>HR Portal Section On Dashboard</label>
                                     <select id="show_hr_dashboard" name="show_hr_dashboard" class="form-select">
@@ -771,7 +771,7 @@
                                     </select>
                                     <small class="text-muted">When disabled, only the staff, attendance, and salary section is hidden.</small>
                                 </div>
-                            </div>
+                            </div> -->
                             <div class="col-lg-4 col-sm-6">
                                 <div class="form-group">
                                     <label>ERP Section On Dashboard</label>
@@ -784,18 +784,18 @@
                             </div>
 
                             <div class="col-lg-12 mt-3 dashboard-mobile-subsection-tabs" role="tablist" aria-label="Dashboard subsections">
-                                <button type="button" class="dashboard-mobile-subsection-tab active" data-dashboard-subsection="crm">CRM</button>
-                                <button type="button" class="dashboard-mobile-subsection-tab" data-dashboard-subsection="hr">HR</button>
+                                <!-- <button type="button" class="dashboard-mobile-subsection-tab active" data-dashboard-subsection="crm">CRM</button>
+                                <button type="button" class="dashboard-mobile-subsection-tab" data-dashboard-subsection="hr">HR</button> -->
                                 <button type="button" class="dashboard-mobile-subsection-tab" data-dashboard-subsection="erp">ERP</button>
                             </div>
 
-                            <div class="col-lg-12 mt-4 mb-3">
+                            <!-- <div class="col-lg-12 mt-4 mb-3">
                                 <h5 class="mb-3">CRM Dashboard Subsections</h5>
                                 <p class="text-muted small mb-3">Control visibility of individual CRM dashboard components:</p>
-                            </div>
+                            </div> -->
 
                             <!-- Top 4 Metric Boxes -->
-                            <div class="col-lg-2 col-sm-6 col-6">
+                            <!-- <div class="col-lg-2 col-sm-6 col-6">
                                 <div class="form-group">
                                     <label>Lead Pipeline Box</label>
                                     <select id="show_crm_lead_pipeline" name="show_crm_lead_pipeline" class="form-select">
@@ -832,7 +832,7 @@
                                 </div>
                             </div>
 
-                            <!-- Charts and Tables -->
+                            Charts and Tables
                             <div class="col-lg-2 col-sm-6 col-6">
                                 <div class="form-group">
                                     <label>Lead Status Mix Chart</label>
@@ -877,14 +877,14 @@
                                         <option value="0">Disable</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div> -->
 
-                            <div class="col-lg-12 mt-4 mb-3">
+                            <!-- <div class="col-lg-12 mt-4 mb-3">
                                 <h5 class="mb-3">HR Dashboard Subsections</h5>
                                 <p class="text-muted small mb-3">Control visibility of individual HR dashboard components:</p>
                             </div>
 
-                            <!-- HR Metric Boxes -->
+                            HR Metric Boxes
                             <div class="col-lg-2 col-sm-6 col-6">
                                 <div class="form-group">
                                     <label>Staff Strength Box</label>
@@ -922,7 +922,7 @@
                                 </div>
                             </div>
 
-                            <!-- HR Charts and Tables -->
+                            HR Charts and Tables
                             <div class="col-lg-2 col-sm-6 col-6">
                                 <div class="form-group">
                                     <label>7 Day Attendance Pattern Chart</label>
@@ -967,7 +967,7 @@
                                         <option value="0">Disable</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div> -->
 
                             <div class="col-lg-12 mt-4 mb-3">
                                 <h5 class="mb-3">ERP Dashboard Subsections</h5>
