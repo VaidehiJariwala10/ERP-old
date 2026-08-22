@@ -462,8 +462,8 @@
                                 <th>Email</th>
                                 {{-- <th>Staff Role</th> --}}
                                 <th>Phone</th>
-                                <th>Department</th>
-                                <th>Designation</th>
+                                <!-- <th>Department</th>
+                                <th>Designation</th> -->
                                 <th>Action</th>
                                 <th class="details-column">Details</th>
                             </tr>
